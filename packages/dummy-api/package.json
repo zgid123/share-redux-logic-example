@@ -1,0 +1,52 @@
+{
+  "name": "@share-redux/dummy-api",
+  "version": "1.0.1",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "ts-node --files ./src/index.ts",
+    "watch": "nodemon"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.0",
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.8",
+    "@types/morgan": "^1.9.1",
+    "cross-env": "^5.2.0",
+    "nodemon": "^1.18.3",
+    "ts-node": "8.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "lodash": "^4.17.20",
+    "module-alias": "^2.2.2",
+    "morgan": "^1.10.0",
+    "permit-params": "^1.0.1"
+  },
+  "_moduleAliases": {
+    "@utils": "./src/utils",
+    "@config": "./src/config",
+    "@fixtures": "./src/fixtures",
+    "@services": "./src/services",
+    "@interfaces": "./src/interfaces",
+    "@middlewares": "./src/middlewares",
+    "@initializers": "./src/initializers"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "yarn start",
+    "ext": "ts"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "sourceMap": false,
+    "target": "es2017",
+    "module": "commonjs",
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": true,
+    "paths": {
+      "@utils": [
+        "utils"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@config": [
+        "config"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@fixtures": [
+        "fixtures"
+      ],
+      "@fixtures/*": [
+        "fixtures/*"
+      ],
+      "@services": [
+        "services"
+      ],
+      "@services/*": [
+        "services/*"
+      ],
+      "@interfaces": [
+        "interfaces"
+      ],
+      "@interfaces/*": [
+        "interfaces/*"
+      ],
+      "@middlewares": [
+        "middlewares"
+      ],
+      "@middlewares/*": [
+        "middlewares/*"
+      ],
+      "@initializers": [
+        "initializers"
+      ],
+      "@initializers/*": [
+        "initializers/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "package.json"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

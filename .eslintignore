@@ -1,0 +1,6 @@
+config
+scripts
+src/**/*.d.ts
+
+packages/mobile/metro.config.js
+packages/mobile/babel.config.js

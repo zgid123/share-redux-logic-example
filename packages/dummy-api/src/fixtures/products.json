@@ -1,0 +1,22 @@
+[
+  {
+    "name": "hero Product",
+    "detail": "Lorem ipsum dolor sit amet",
+    "price": "99"
+  },
+  {
+    "name": "Product 1",
+    "detail": "Lorem ipsum dolor sit amet",
+    "price": "99"
+  },
+  {
+    "name": "Product 2",
+    "detail": "Lorem ipsum dolor sit amet",
+    "price": "99"
+  },
+  {
+    "name": "Product 3",
+    "detail": "Lorem ipsum dolor sit amet",
+    "price": "99"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "private": true,
+  "name": "share-redux",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/module-alias"
+    ]
+  },
+  "scripts": {
+    "start-web": "yarn workspace @share-redux/web start",
+    "start-mobile": "yarn workspace @share-redux/mobile start",
+    "start-server": "yarn workspace @share-redux/dummy-api start",
+    "build-redux-common": "yarn workspace @share-redux/redux-common build",
+    "soft-build-redux-common": "yarn workspace @share-redux/redux-common soft-build",
+    "build": "yarn wsrun --exclude @share-redux/mobile --stages build",
+    "build:staging": "yarn wsrun --exclude @share-redux/mobile --stages build:staging"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "date-fns": "^2.16.1",
+    "query-string": "^6.13.7"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-config-typescript": "^3.0.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^3.10.0",
+    "eslint-webpack-plugin": "^2.2.1",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1",
+    "prettier": "^2.1.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.0.5",
+    "wsrun": "^5.2.4"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@share-redux/redux-common",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "description": "Redux",
+  "author": "Alpha",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf lib && tsc",
+    "soft-build": "tsc",
+    "build:staging": "rm -rf lib && tsc"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.4.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-observable": "^1.2.0",
+    "redux-persist": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/react-redux": "^7.1.11",
+    "@types/redux-logger": "^3.0.8",
+    "@types/webpack-env": "^1.15.3"
+  }
+}
